@@ -2,23 +2,23 @@ readmeCreator
     Table of Contents:
     
     Description: 
-    This application generates a professional looking readme
+    This app genereates a readme
     
 
     Installation:
-    use node.js to run the application
+    instructions
 
     Usage:
-    run the application in node.js then enter the information into the terminal when prompted
+    node.js
 
     License: 
-    mit
+    MIT
 
     Contributing:
-    me
+    fdksflsdm
 
     Tests:
-    run
+    fsdkmfld
 
     Questions:
     My github is jaguar6105

@@ -21,14 +21,14 @@ const inquirer = require("inquirer");
 */
 // array of questions for user
 const questions = ["Title: ",
-"Description: ",
-"Installation: ",
-"Usage: ",
-"License: ",
-"Contributing: ",
-"Test Instructions: ",
-"Github UserName: ",
-"Email: "
+    "Description: ",
+    "Installation: ",
+    "Usage: ",
+    "License: ",
+    "Contributing: ",
+    "Test Instructions: ",
+    "Github UserName: ",
+    "Email: "
 ];
 
 const answers = [];
@@ -40,9 +40,13 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 async function init() {
-    for(let i = 0; i < questions.length; i++){
-
-    await askQuestion(questions[i]);
+    for (let i = 0; i < questions.length; i++) {
+        if (i == 4) {
+            await askLicense();
+        }
+        else {
+            await askQuestion(questions[i]);
+        }
     }
     writeToFile("README.md", generateReadmeText());
 }
@@ -50,17 +54,30 @@ async function init() {
 
 async function askQuestion(question) {
     try {
-        //for(let i = 0; i < questions.length; i++){
         const { answer } = await inquirer.prompt({
             message: question,
             name: "answer"
         })
         answers.push(answer);
-    //}
     } catch (err) {
         console.log(err);
     }
 }
+
+async function askLicense() {
+    try {
+        const { answer } = await inquirer.prompt({
+            type: "list",
+            choices: ["MIT", "Apache", "GPLv2", "Other"],
+            name: "answer",
+            message: "What license was used?"
+        })
+        answers.push(answer);
+    } catch (err) {
+        console.log(err);
+    }
+}
+
 
 function generateReadmeText() {
     const text = `${answers[0]}
@@ -93,5 +110,5 @@ function generateReadmeText() {
     `
     return text;
 }
-    // function call to initialize program
-    init();
+// function call to initialize program
+init();
