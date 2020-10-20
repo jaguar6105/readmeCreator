@@ -68,7 +68,7 @@ async function askLicense() {
     try {
         const { answer } = await inquirer.prompt({
             type: "list",
-            choices: ["MIT", "Apache", "GPLv2", "Other"],
+            choices: ["MIT", "Apache", "GPLv2", "Other", "None"],
             name: "answer",
             message: "What license was used?"
         })
@@ -103,7 +103,7 @@ function generateReadmeText() {
     ${answers[6]}
 
     Questions:
-    My github is ${answers[7]}
+    My github is ${answers[7]} (https://github.com/${answers[7]})
     Email me at ${answers[8]}
     
     

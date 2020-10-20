@@ -1,28 +1,28 @@
-readmeCreator
+words
     Table of Contents:
     
     Description: 
-    This app genereates a readme
+    words
     
 
     Installation:
-    instructions
+    words
 
     Usage:
-    node.js
+    words
 
     License: 
     MIT
 
     Contributing:
-    fdksflsdm
+    fsdlkfs
 
     Tests:
-    fsdkmfld
+    fksdlf
 
     Questions:
-    My github is jaguar6105
-    Email me at gilljoseph603@gmail.com
+    My github is jaguar6105 (https://github.com/jaguar6105)
+    Email me at flskds
     
     
     
