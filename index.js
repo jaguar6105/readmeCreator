@@ -93,26 +93,26 @@ Table of Contents:
 [Questions](#questions)
     
 # Description 
-    ${answers[1]}
+${answers[1]}
 
 # Installation
-    ${answers[2]}
+${answers[2]}
 
 # Usage
-    ${answers[3]}
+${answers[3]}
 
 # License
-    ${answers[4]}
+${answers[4]}
 
 # Contributing
-    ${answers[5]}
+${answers[5]}
 
 # Tests
-    ${answers[6]}
+${answers[6]}
 
 # Questions
-    My github is [${answers[7]}](https://github.com/${answers[7]})
-    Email me at ${answers[8]}
+My github is [${answers[7]}](https://github.com/${answers[7]})
+Email me at ${answers[8]}
     
     
     `

@@ -1,5 +1,5 @@
 
-gffdgdf
+readmeCreator
 
 Table of Contents:
 [Description](#description) 
@@ -11,26 +11,26 @@ Table of Contents:
 [Questions](#questions)
     
 # Description 
-    gfgfdg
+this application creates a professional looking readme
 
 # Installation
-    gfdgdf
+use node.js
 
 # Usage
-    gfdgf
+use node.js and respond to the prompts in the terminal
 
 # License
-    MIT
+None
 
 # Contributing
-    gfdgfd
+Joseph Gill
 
 # Tests
-    gfdg
+use node.js and responde to the prompts
 
 # Questions
-    My github is [jaguar6105](https://github.com/jaguar6105)
-    Email me at gdfgd
+My github is [jaguar6105](https://github.com/jaguar6105)
+Email me at gilljoseph603@gmail.com
     
     
     
