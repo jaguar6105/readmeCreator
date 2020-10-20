@@ -81,36 +81,36 @@ async function askLicense() {
 
 function generateReadmeText() {
     const text = `
-    ${answers[0]}
+${answers[0]}
 
-    Table of Contents:
-    [Description](#description) 
-    [Installation](#installation)
-    [Usage](#usage)
-    [License](#license)
-    [Contributing](#contributing)
-    [Tests](#tests)
-    [Questions](#questions)
+Table of Contents:
+[Description](#description) 
+[Installation](#installation)
+[Usage](#usage)
+[License](#license)
+[Contributing](#contributing)
+[Tests](#tests)
+[Questions](#questions)
     
-    # Description 
+# Description 
     ${answers[1]}
 
-    # Installation
+# Installation
     ${answers[2]}
 
-    # Usage
+# Usage
     ${answers[3]}
 
-    # License
+# License
     ${answers[4]}
 
-    # Contributing
+# Contributing
     ${answers[5]}
 
-    # Tests
+# Tests
     ${answers[6]}
 
-    # Questions
+# Questions
     My github is [${answers[7]}](https://github.com/${answers[7]})
     Email me at ${answers[8]}
     
