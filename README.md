@@ -1,7 +1,7 @@
 
 readmeCreator
 
-Table of Contents:
+# Table of Contents
 
 [Description](#description) 
 
@@ -18,13 +18,13 @@ Table of Contents:
 [Questions](#questions)
     
 # Description 
-This application generates a readme from user input
+This application generates a readme from user input.
 
 # Installation
-none
+npm i
 
 # Usage
-uses node.js
+Node.js and inquirer
 
 # License
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
@@ -33,7 +33,7 @@ uses node.js
 Joseph Gill
 
 # Tests
-None
+node index
 
 # Questions
 My github is [jaguar6105](https://github.com/jaguar6105)
