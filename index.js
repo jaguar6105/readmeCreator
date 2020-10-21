@@ -102,7 +102,7 @@ function getBadge(answer) {
         const text = `
 ${answers[0]}
 
-Table of Contents:
+# Table of Contents
 
 [Description](#description) 
 
