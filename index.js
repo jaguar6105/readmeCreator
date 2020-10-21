@@ -72,24 +72,50 @@ async function askLicense() {
             name: "answer",
             message: "What license was used?"
         })
-        answers.push(answer);
+        answers.push(getBadge(answer));
     } catch (err) {
         console.log(err);
     }
 }
 
+function getBadge(answer) {
+    switch (answer) {
+        case "MIT":
+            return '[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)'
+            break;
+        case "Apache":
+            return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+            break;
+        case "GPLv2":
+            return "[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)";
+            break;
+        case "Other":
+            return "Other";
+            break;
+        case "None":
+            return "None";
+            break;
+    }
+}
 
-function generateReadmeText() {
-    const text = `
+    function generateReadmeText() {
+        const text = `
 ${answers[0]}
 
 Table of Contents:
+
 [Description](#description) 
+
 [Installation](#installation)
+
 [Usage](#usage)
+
 [License](#license)
+
 [Contributing](#contributing)
+
 [Tests](#tests)
+
 [Questions](#questions)
     
 # Description 
@@ -112,11 +138,12 @@ ${answers[6]}
 
 # Questions
 My github is [${answers[7]}](https://github.com/${answers[7]})
+
 Email me at ${answers[8]}
     
     
     `
-    return text;
-}
-// function call to initialize program
-init();
+        return text;
+    }
+    // function call to initialize program
+    init();

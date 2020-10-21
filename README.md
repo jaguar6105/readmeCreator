@@ -2,34 +2,42 @@
 readmeCreator
 
 Table of Contents:
+
 [Description](#description) 
+
 [Installation](#installation)
+
 [Usage](#usage)
+
 [License](#license)
+
 [Contributing](#contributing)
+
 [Tests](#tests)
+
 [Questions](#questions)
     
 # Description 
-this application creates a professional looking readme
+This application generates a readme from user input
 
 # Installation
-use node.js
+none
 
 # Usage
-use node.js and respond to the prompts in the terminal
+uses node.js
 
 # License
-None
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 # Contributing
 Joseph Gill
 
 # Tests
-use node.js and responde to the prompts
+None
 
 # Questions
 My github is [jaguar6105](https://github.com/jaguar6105)
+
 Email me at gilljoseph603@gmail.com
     
     
