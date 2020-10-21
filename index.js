@@ -52,6 +52,7 @@ async function init() {
 }
 
 
+//asks the user questions that are passed in and pushes the answers into an array
 async function askQuestion(question) {
     try {
         const { answer } = await inquirer.prompt({
@@ -64,6 +65,7 @@ async function askQuestion(question) {
     }
 }
 
+//asks the user for licenses
 async function askLicense() {
     try {
         const { answer } = await inquirer.prompt({
@@ -78,6 +80,7 @@ async function askLicense() {
     }
 }
 
+//get badges using a swuitch statement
 function getBadge(answer) {
     switch (answer) {
         case "MIT":
@@ -98,8 +101,9 @@ function getBadge(answer) {
     }
 }
 
-    function generateReadmeText() {
-        const text = `
+//generates the readme text
+function generateReadmeText() {
+    const text = `
 ${answers[0]}
 
 # Table of Contents
@@ -143,7 +147,7 @@ Email me at ${answers[8]}
     
     
     `
-        return text;
-    }
-    // function call to initialize program
-    init();
+    return text;
+}
+// function call to initialize program
+init();
